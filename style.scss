@@ -320,9 +320,17 @@ ul {
 @media (min-width: 600px) {
   body {
     background: #1d1f29;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   header {
+    width: 100%;
+    padding: toRem(36) toRem(24) toRem(84) toRem(25);
+    background: #20222f;
+    border-radius: 0px 0px 20px 20px;
+
     .text {
       h1 {
         font-weight: 700;
@@ -340,10 +348,15 @@ ul {
     }
 
     hr {
-      display: none;
+      display: block;
+      margin-top: 24px;
+      margin-bottom: 16px;
     }
 
     .toogle-switch {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       p {
         font-weight: 700;
         font-size: 14px;
@@ -352,14 +365,56 @@ ul {
       }
 
       button {
+        background: linear-gradient(225deg, #40db82 0%, #388fe7 98.02%);
+        border-radius: 12px;
+        height: 24px;
+        width: 48px;
+        position: relative;
+
+        &::before {
+          content: "";
+        }
       }
     }
   }
 
   main {
+    width: toRem(326);
+    margin-top: -44px;
+
     .first-grid {
+      display: grid;
+      gap: toRem(24);
+
+      .one {
+        border-top: 4px solid #178FF5;
+      }
+      .two {
+        border-top: 4px solid #1DA1F2;
+      }
+      .three {
+        border-top: 4px solid #FDC366;
+      }
+      .four {
+        border-top: 4px solid #C4032B;
+      }
+
       .box {
+        background: #252b42;
+        border-radius: 5px;
+        height: toRem(216);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        
+
         .icon-and-name {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
           .icon-social-media {
             height: 20px;
             width: 20px;
@@ -374,6 +429,8 @@ ul {
         }
 
         .numbers-of-followers {
+          margin-top: toRem(28);
+          margin-bottom: toRem(24);
           h2 {
             font-weight: 700;
             font-size: 56px;
@@ -381,6 +438,7 @@ ul {
             text-align: center;
             letter-spacing: -2px;
             color: #ffffff;
+            margin-bottom: 9px;
           }
 
           p {
@@ -395,6 +453,10 @@ ul {
         }
 
         .today {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 4px;
           .icon-arrow {
             height: 4px;
             width: 8px;
@@ -416,13 +478,29 @@ ul {
         font-size: 24px;
         line-height: 29px;
         color: #ffffff;
+        margin-bottom: 27px;
+        margin-top: 46px;
       }
 
       .grid-container {
         display: grid;
+        gap: toRem(16);
 
         .rectangle {
+          background: #252b42;
+          border-radius: 5px;
+          height: toRem(125);
+          padding-left: toRem(24);
+          padding-right: toRem(31);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
           .category-and-icon {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 21px;
             p {
               font-weight: 700;
               font-size: 14px;
@@ -437,6 +515,10 @@ ul {
           }
 
           .number-and-percentage {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
             h4 {
               font-weight: 700;
               font-size: 32px;
@@ -445,6 +527,10 @@ ul {
             }
 
             .arrow-and-percentage {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 4px;
               .icon-up-or-down {
                 height: 4px;
                 width: 8px;

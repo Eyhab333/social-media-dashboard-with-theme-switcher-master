@@ -279,6 +279,15 @@ ul {
 @media (min-width: 600px) {
   body {
     background: #1d1f29;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    width: 100%;
+    padding: 2.25rem 1.5rem 5.25rem 1.5625rem;
+    background: #20222f;
+    border-radius: 0px 0px 20px 20px;
   }
   header .text h1 {
     font-weight: 700;
@@ -293,13 +302,65 @@ ul {
     color: #8c98c6;
   }
   header hr {
-    display: none;
+    display: block;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+  header .toogle-switch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   header .toogle-switch p {
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
     color: #8c98c6;
+  }
+  header .toogle-switch button {
+    background: linear-gradient(225deg, #40db82 0%, #388fe7 98.02%);
+    border-radius: 12px;
+    height: 24px;
+    width: 48px;
+    position: relative;
+  }
+  header .toogle-switch button::before {
+    content: "";
+  }
+  main {
+    width: 20.375rem;
+    margin-top: -44px;
+  }
+  main .first-grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+  main .first-grid .one {
+    border-top: 4px solid #178FF5;
+  }
+  main .first-grid .two {
+    border-top: 4px solid #1DA1F2;
+  }
+  main .first-grid .three {
+    border-top: 4px solid #FDC366;
+  }
+  main .first-grid .four {
+    border-top: 4px solid #C4032B;
+  }
+  main .first-grid .box {
+    background: #252b42;
+    border-radius: 5px;
+    height: 13.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main .first-grid .box .icon-and-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
   }
   main .first-grid .box .icon-and-name .icon-social-media {
     height: 20px;
@@ -311,6 +372,10 @@ ul {
     line-height: 15px;
     color: #8c98c6;
   }
+  main .first-grid .box .numbers-of-followers {
+    margin-top: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
   main .first-grid .box .numbers-of-followers h2 {
     font-weight: 700;
     font-size: 56px;
@@ -318,6 +383,7 @@ ul {
     text-align: center;
     letter-spacing: -2px;
     color: #ffffff;
+    margin-bottom: 9px;
   }
   main .first-grid .box .numbers-of-followers p {
     font-weight: 400;
@@ -327,6 +393,12 @@ ul {
     letter-spacing: 5px;
     text-transform: uppercase;
     color: #8c98c6;
+  }
+  main .first-grid .box .today {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
   }
   main .first-grid .box .today .icon-arrow {
     height: 4px;
@@ -343,9 +415,28 @@ ul {
     font-size: 24px;
     line-height: 29px;
     color: #ffffff;
+    margin-bottom: 27px;
+    margin-top: 46px;
   }
   main .second-grid .grid-container {
     display: grid;
+    gap: 1rem;
+  }
+  main .second-grid .grid-container .rectangle {
+    background: #252b42;
+    border-radius: 5px;
+    height: 7.8125rem;
+    padding-left: 1.5rem;
+    padding-right: 1.9375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .second-grid .grid-container .rectangle .category-and-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 21px;
   }
   main .second-grid .grid-container .rectangle .category-and-icon p {
     font-weight: 700;
@@ -357,11 +448,22 @@ ul {
     height: 20px;
     width: 20px;
   }
+  main .second-grid .grid-container .rectangle .number-and-percentage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   main .second-grid .grid-container .rectangle .number-and-percentage h4 {
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;
     color: #ffffff;
+  }
+  main .second-grid .grid-container .rectangle .number-and-percentage .arrow-and-percentage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
   }
   main .second-grid .grid-container .rectangle .number-and-percentage .arrow-and-percentage .icon-up-or-down {
     height: 4px;
