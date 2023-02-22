@@ -123,22 +123,23 @@ ul {
   main {
     width: 20.375rem;
     margin-top: -44px;
+    padding-bottom: 45px;
   }
   main .first-grid {
     display: grid;
     gap: 1.5rem;
   }
   main .first-grid .one {
-    border-top: 4px solid #178FF5;
+    border-top: 4px solid #178ff5;
   }
   main .first-grid .two {
-    border-top: 4px solid #1DA1F2;
+    border-top: 4px solid #1da1f2;
   }
   main .first-grid .three {
-    border-top: 4px solid #FDC366;
+    border-top: 4px solid #fdc366;
   }
   main .first-grid .four {
-    border-top: 4px solid #C4032B;
+    border-top: 4px solid #c4032b;
   }
   main .first-grid .box {
     background: #252b42;
@@ -269,11 +270,6 @@ ul {
     text-align: right;
     color: #1eb589;
   }
-  footer {
-    height: 145px;
-    width: 100%;
-    margin-top: 120px;
-  }
 }
 /*############ for-tablet-portrait-up ##############*/
 @media (min-width: 600px) {
@@ -285,15 +281,19 @@ ul {
   }
   header {
     width: 100%;
-    padding: 2.25rem 1.5rem 5.25rem 1.5625rem;
+    padding: 2.25rem 10.3125rem 9.625rem 10.125rem;
     background: #20222f;
     border-radius: 0px 0px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   header .text h1 {
     font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 28px;
+    line-height: 34px;
     color: #ffffff;
+    margin-bottom: 3px;
   }
   header .text p {
     font-weight: 700;
@@ -302,9 +302,7 @@ ul {
     color: #8c98c6;
   }
   header hr {
-    display: block;
-    margin-top: 24px;
-    margin-bottom: 16px;
+    display: none;
   }
   header .toogle-switch {
     display: flex;
@@ -316,6 +314,7 @@ ul {
     font-size: 14px;
     line-height: 17px;
     color: #8c98c6;
+    margin-right: 13px;
   }
   header .toogle-switch button {
     background: linear-gradient(225deg, #40db82 0%, #388fe7 98.02%);
@@ -326,31 +325,42 @@ ul {
   }
   header .toogle-switch button::before {
     content: "";
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 18px;
+    height: 18px;
+    background-color: #252b42;
+    border-radius: 50%;
   }
   main {
-    width: 20.375rem;
+    width: 69.375rem;
     margin-top: -44px;
+    padding-bottom: 75px;
   }
   main .first-grid {
-    display: grid;
-    gap: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.875rem;
   }
   main .first-grid .one {
-    border-top: 4px solid #178FF5;
+    border-top: 4px solid #178ff5;
   }
   main .first-grid .two {
-    border-top: 4px solid #1DA1F2;
+    border-top: 4px solid #1da1f2;
   }
   main .first-grid .three {
-    border-top: 4px solid #FDC366;
+    border-top: 4px solid #fdc366;
   }
   main .first-grid .four {
-    border-top: 4px solid #C4032B;
+    border-top: 4px solid #c4032b;
   }
   main .first-grid .box {
     background: #252b42;
     border-radius: 5px;
     height: 13.5rem;
+    width: 255px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -420,7 +430,9 @@ ul {
   }
   main .second-grid .grid-container {
     display: grid;
-    gap: 1rem;
+    grid-template-columns: 255px 255px 255px 255px;
+    grid-template-rows: 125px 125px;
+    gap: 1.5rem 30px;
   }
   main .second-grid .grid-container .rectangle {
     background: #252b42;

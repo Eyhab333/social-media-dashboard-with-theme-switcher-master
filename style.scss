@@ -140,22 +140,22 @@ ul {
   main {
     width: toRem(326);
     margin-top: -44px;
-
+    padding-bottom: 45px;
     .first-grid {
       display: grid;
       gap: toRem(24);
 
       .one {
-        border-top: 4px solid #178FF5;
+        border-top: 4px solid #178ff5;
       }
       .two {
-        border-top: 4px solid #1DA1F2;
+        border-top: 4px solid #1da1f2;
       }
       .three {
-        border-top: 4px solid #FDC366;
+        border-top: 4px solid #fdc366;
       }
       .four {
-        border-top: 4px solid #C4032B;
+        border-top: 4px solid #c4032b;
       }
 
       .box {
@@ -166,8 +166,6 @@ ul {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
-        
 
         .icon-and-name {
           display: flex;
@@ -308,12 +306,6 @@ ul {
       }
     }
   }
-
-  footer {
-    height: 145px;
-    width: 100%;
-    margin-top: 120px;
-  }
 }
 
 /*############ for-tablet-portrait-up ##############*/
@@ -327,16 +319,19 @@ ul {
 
   header {
     width: 100%;
-    padding: toRem(36) toRem(24) toRem(84) toRem(25);
+    padding: toRem(36) toRem(165) toRem(154) toRem(162);
     background: #20222f;
     border-radius: 0px 0px 20px 20px;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     .text {
       h1 {
         font-weight: 700;
-        font-size: 24px;
-        line-height: 29px;
+        font-size: 28px;
+        line-height: 34px;
         color: #ffffff;
+        margin-bottom: 3px;
       }
 
       p {
@@ -348,9 +343,7 @@ ul {
     }
 
     hr {
-      display: block;
-      margin-top: 24px;
-      margin-bottom: 16px;
+      display: none;
     }
 
     .toogle-switch {
@@ -362,6 +355,7 @@ ul {
         font-size: 14px;
         line-height: 17px;
         color: #8c98c6;
+        margin-right: 13px;
       }
 
       button {
@@ -373,42 +367,51 @@ ul {
 
         &::before {
           content: "";
+          position: absolute;
+          left: 3px;
+          top: 3px;
+          width: 18px;
+          height: 18px;
+          background-color: #252b42;
+          border-radius: 50%;
         }
       }
     }
   }
 
   main {
-    width: toRem(326);
+    width: toRem(1110);
     margin-top: -44px;
+    padding-bottom: 75px;
 
     .first-grid {
-      display: grid;
-      gap: toRem(24);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: toRem(30);
 
       .one {
-        border-top: 4px solid #178FF5;
+        border-top: 4px solid #178ff5;
       }
       .two {
-        border-top: 4px solid #1DA1F2;
+        border-top: 4px solid #1da1f2;
       }
       .three {
-        border-top: 4px solid #FDC366;
+        border-top: 4px solid #fdc366;
       }
       .four {
-        border-top: 4px solid #C4032B;
+        border-top: 4px solid #c4032b;
       }
 
       .box {
         background: #252b42;
         border-radius: 5px;
         height: toRem(216);
+        width: 255px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
-        
 
         .icon-and-name {
           display: flex;
@@ -484,7 +487,9 @@ ul {
 
       .grid-container {
         display: grid;
-        gap: toRem(16);
+        grid-template-columns: 255px 255px 255px 255px;
+        grid-template-rows: 125px 125px;
+        gap: toRem(24) 30px;
 
         .rectangle {
           background: #252b42;
